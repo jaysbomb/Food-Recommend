@@ -9,12 +9,31 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FFFF33"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.zouzijie.groupproject.ZZJ_Group_Project"
     tools:showIn="@layout/app_bar_zzj__group__project">
 
+    <Button
+        android:text="@string/buttom_convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:textStyle="normal|bold|italic"
+        android:textColor="@android:color/black"
+        android:background="@android:color/holo_red_light"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="123dp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Click and recommend!"
+        android:textStyle="normal|bold|italic"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="30sp"
+        android:layout_alignBottom="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="151dp" />
 </RelativeLayout>
