@@ -36,7 +36,8 @@
             android:name=".ProfileActivity"
             android:label="@string/Profile" />
         <activity android:name=".Stepcourt" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity"
+            android:label="Dishes"/>
     </application>
 
 </manifest>
