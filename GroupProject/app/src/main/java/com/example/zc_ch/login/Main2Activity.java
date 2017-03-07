@@ -11,18 +11,32 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.DecelerateInterpolator;
+import android.view.animation.LinearInterpolator;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private Button button;
+    private ImageView mImageView;
+    private ImageView mImageView2;
+    private ImageView mImageView3;
+    private ImageView mImageView4;
+    private ImageView mImageView5;
+    private TextView mTextView;
+
+    public  String userName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+        Bundle bundle = new Bundle();
+        userName = bundle.getString("userName");
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        button = (Button)findViewById(R.id.button);
+
        /* FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,7 +46,18 @@ public class Main2Activity extends AppCompatActivity
             }
         });
         */
-
+        mImageView =(ImageView)findViewById(R.id.imageView4);
+        mImageView2 =(ImageView)findViewById(R.id.imageView5);
+        mImageView3 =(ImageView)findViewById(R.id.imageView6);
+        mImageView4 =(ImageView)findViewById(R.id.imageView8);
+        mImageView5 =(ImageView)findViewById(R.id.imageView9);
+        mTextView = (TextView)findViewById(R.id.textView);
+        mImageView.setAlpha(0.0f);
+        mImageView2.setAlpha(0.0f);
+        mImageView3.setAlpha(0.0f);
+        mImageView4.setAlpha(0.0f);
+        mImageView5.setAlpha(0.0f);
+        mTextView.setAlpha(0.0f);
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -40,16 +65,47 @@ public class Main2Activity extends AppCompatActivity
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+
+
+
         navigationView.setNavigationItemSelectedListener(this);
 
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent con = new Intent(Main2Activity.this, MainActivity.class);
-                startActivity(con);
-            }
-        });
-    }
 
+    }
+    public void onClick(View v) {
+        Intent con = new Intent(Main2Activity.this, MainActivity.class);
+        startActivity(con);
+    }
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus){
+        super.onWindowFocusChanged(hasFocus);
+
+        if (hasFocus){
+            fadeIn.run();
+        }
+    }
+    Runnable fadeIn = new Runnable() {
+        @Override
+        public void run() {
+            mImageView.animate().setDuration(2000).setInterpolator(new LinearInterpolator()).alpha(1.0f);
+            mImageView2.animate().setStartDelay(1000).setDuration(2000).setInterpolator(new LinearInterpolator()).alpha(1.0f);
+            mImageView3.animate().setStartDelay(3000).setDuration(2000).setInterpolator(new LinearInterpolator()).alpha(1.0f);
+            mImageView4.animate().setStartDelay(5000).setDuration(2000).setInterpolator(new LinearInterpolator()).alpha(1.0f);
+            mTextView.animate().setStartDelay(5000).setDuration(2000).setInterpolator(new LinearInterpolator()).alpha(1.0f);
+            mImageView5.animate().setStartDelay(5000).setDuration(2000).setInterpolator(new LinearInterpolator()).alpha(1.0f).withEndAction(fadeOut);
+        }
+    };
+    Runnable fadeOut = new Runnable() {
+        @Override
+        public void run() {
+            mImageView.animate().setDuration(2000).setInterpolator(new DecelerateInterpolator()).alpha(0.0f);
+            mImageView2.animate().setDuration(2000).setInterpolator(new DecelerateInterpolator()).alpha(0.0f);
+            mImageView3.animate().setDuration(2000).setInterpolator(new DecelerateInterpolator()).alpha(0.0f);
+            mImageView4.animate().setDuration(2000).setInterpolator(new DecelerateInterpolator()).alpha(0.0f);
+            mTextView.animate().setDuration(2000).setInterpolator(new DecelerateInterpolator()).alpha(0.0f);
+            mImageView5.animate().setDuration(2000).setInterpolator(new DecelerateInterpolator()).alpha(0.0f).withEndAction(fadeIn);
+        }
+    };
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

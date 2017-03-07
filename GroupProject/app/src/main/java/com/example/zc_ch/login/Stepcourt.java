@@ -1,13 +1,12 @@
 package com.example.zc_ch.login;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.app.Activity;
 import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,7 +25,7 @@ public class Stepcourt extends AppCompatActivity implements SensorEventListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stepcourt);
 
-        count = (TextView) findViewById(R.id.count);
+        //count = (TextView) findViewById(R.id.count);
         count_cal = (TextView) findViewById(R.id.count_cal);
         arc_progress = (ArcProgress) findViewById(R.id.arc_progress);
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
@@ -55,7 +54,7 @@ public class Stepcourt extends AppCompatActivity implements SensorEventListener{
     public void onSensorChanged(SensorEvent event) {
         if(activityRunning){
             Double cal = event.values[0]*0.031;
-            count.setText(String.valueOf(event.values[0]));
+
             count_cal.setText(String.valueOf(cal));
             arc_progress.setProgress((int)event.values[0]);
         }

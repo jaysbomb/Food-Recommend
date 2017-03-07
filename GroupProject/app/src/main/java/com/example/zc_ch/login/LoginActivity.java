@@ -63,6 +63,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private View mProgressView;
     private View mLoginFormView;
     private Button sign_up_button;
+    public String userName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -171,7 +172,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         // Store values at the time of the login attempt.
         String email = mEmailView.getText().toString();
         String password = mPasswordView.getText().toString();
-
+        userName =email;
         boolean cancel = false;
         View focusView = null;
 
@@ -327,6 +328,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
                 if(mydb.check_user(mEmail,mPassword)){
                     Intent i = new Intent(LoginActivity.this,Main2Activity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("userName",userName);
                     startActivity(i);
                     Log.d("test","login successfully");
                 }else{

@@ -14,23 +14,70 @@
     tools:showIn="@layout/app_bar_main2">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/logofood"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="57dp"
-        android:id="@+id/imageView2" />
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:srcCompat="@drawable/o"
+        android:id="@+id/imageView4"
+        android:layout_above="@+id/imageView3"
+        android:layout_toEndOf="@+id/imageView3" />
 
-    <Button
-        android:text="@string/buttom_convert"
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/o"
+        android:layout_above="@+id/imageView4"
+        android:layout_toEndOf="@+id/imageView4"
+        android:id="@+id/imageView5" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/o"
+        android:layout_above="@+id/imageView5"
+        android:layout_toEndOf="@+id/imageView5"
+        android:id="@+id/imageView6" />
+
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:background="@android:color/holo_red_light"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:layout_below="@+id/imageView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
-        style="@android:style/Widget.Material.Button.Colored" />
+        app:srcCompat="@drawable/w"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="172dp"
+        android:id="@+id/imageView3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        app:srcCompat="@drawable/yun"
+        android:id="@+id/imageView8"
+        android:cropToPadding="false"
+        android:adjustViewBounds="false"
+        android:scaleType="centerCrop"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_toEndOf="@+id/imageView5"
+        android:onClick="onClick" />
+
+    <TextView
+        android:text="Now eat what"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_marginRight="44dp"
+        android:textSize="17sp"
+        android:fontFamily="casual"
+        android:textStyle="normal|bold"
+        android:layout_above="@+id/imageView6"
+        android:layout_toEndOf="@+id/imageView6"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/q"
+        android:id="@+id/imageView9"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="19dp" />
 </RelativeLayout>

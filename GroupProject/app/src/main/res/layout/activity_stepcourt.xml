@@ -23,23 +23,6 @@
 
         <TextView
             android:textColor="@android:color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:layout_gravity="center"
-            android:text="Steps: "/>
-
-        <TextView
-            android:id="@+id/count"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:textSize="36dp"
-            android:textColor="@android:color/black" />
-
-        <TextView
-            android:textColor="@android:color/black"
             android:text="Calories:"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -56,20 +39,22 @@
             android:textSize="36dp"
             android:textColor="@android:color/black" />
 
-        <com.github.lzyzsd.circleprogress.ArcProgress
-            android:id="@+id/arc_progress"
-            android:layout_marginLeft="50dp"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            custom:arc_suffix_text="   today"
-            custom:arc_finished_color="@color/colorAccent"
-            custom:arc_unfinished_color="@android:color/darker_gray"
-            custom:arc_bottom_text="Steps"
-            custom:arc_max="20000"
-            custom:arc_progress="10000"
-            custom:arc_bottom_text_size="20dp"
-            />
-
 
     </LinearLayout>
+
+    <com.github.lzyzsd.circleprogress.ArcProgress
+        android:id="@+id/arc_progress"
+        android:layout_marginLeft="50dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        custom:arc_suffix_text="   today"
+        custom:arc_finished_color="@color/colorAccent"
+        custom:arc_unfinished_color="@android:color/darker_gray"
+        custom:arc_bottom_text="Steps"
+        custom:arc_max="20000"
+        custom:arc_progress="5000"
+        custom:arc_bottom_text_size="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="49dp" />
 </RelativeLayout>
