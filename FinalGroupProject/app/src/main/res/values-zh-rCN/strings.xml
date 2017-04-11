@@ -1,0 +1,175 @@
+<resources>
+    <string name="app_name">明智之选</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">邮箱</string>
+    <string name="prompt_password">密码 </string>
+    <string name="action_sign_in">登入</string>
+    <string name="action_sign_in_short">登入</string>
+    <string name="action_sign_up">注册</string>
+    <string name="error_invalid_email">邮箱有误</string>
+    <string name="error_invalid_password">输入密码太短</string>
+    <string name="error_incorrect_password">密码有误</string>
+    <string name="error_field_required">此处不能为空</string>
+    <string name="permission_rationale">"请问是否允许访问通讯录"
+    </string>
+    <string name="title_activity_main2">明智之选</string>
+    <string name="title_activity_Login">登录</string>
+    <string name="navigation_drawer_open">打开导航栏</string>
+    <string name="navigation_drawer_close">关闭导航栏</string>
+
+    <string name="action_settings">登出</string>
+    <string name="buttom_convert">来看看吃什么!</string>
+    <string name="title_activity_settings">设置</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">概述</string>
+
+    <string name="pref_title_social_recommendations">开启社会推荐</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">提示</string>
+
+    <string name="pref_title_new_message_notifications">新信息提示</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="Profile">Profile</string>
+    <string name="content_main">See what to eat!</string>
+    <string name="step">Step court</string>
+    <string name="action_about">关于</string>
+
+    <string name="auth_failed">注册失败，请重试！</string>
+    <string name="auth_successed">注册成功，请回到登录界面！</string>
+
+    <!--gps-->
+    <string name="share_location">分享</string>
+    <string name="copy_location">复制</string>
+    <string name="view_location">查看</string>
+    <string name="copied">复制到粘贴板</string>
+    <string name="getting_location">获取位置……</string>
+    <string name="share_location_via">分享位置通过</string>
+    <string name="view_location_via">查看位置通过</string>
+
+    <string name="turn_on_GPS">打开GPS</string>
+    <string name="permission_denied">GPS权限遭拒</string>
+
+    <string name="accuracy">精确度</string>
+    <string name="latitude">纬度</string>
+    <string name="longitude">经度</string>
+
+    <string name="choose_link">选择链接类型</string>
+
+    <string name="googlemaps" translatable="false">谷歌地图</string>
+    <string name="openstreetmap" translatable="false">公开街道地图</string>
+    <string name="geouri" translatable="false">GeoURI</string>
+    <string name="button">but</string>
+
+    <!--food-->
+    <string name="allergic">我过敏</string>
+    <string name="dont_eat">我不吃</string>
+    <string name="allergic_to">我对此过敏</string>
+    <string name="food_msg_not_allergic">我对任何食物都过敏</string>
+    <string name="food_msg_not_picker">我不是这个食物的选择</string>
+
+    <string name="cow">牛肉</string>
+    <string name="chicken">鸡</string>
+    <string name="pork">猪肉</string>
+    <string name="fish">鱼</string>
+    <string name="cheese">起司</string>
+    <string name="milk">牛奶</string>
+    <string name="pepper">辣椒</string>
+
+    <string name="app_settings_turn_serious_mode_on">打开严肃模式在：(</string>
+    <string name="app_settings_show_help_dialog">显示帮助</string>
+
+    <string name="no_config_msg">为了显示你的食物限制，你需要先选择</string>
+    <string name="help_title">How does it works?</string>
+    <string name="help_message">1) You have to configure this application using the menu option \'My Restrictions\' to tell it which type of food you are allergic and which type of food you don\'t eat.\n\n 2) Next you will be able to choose in between a graphical version \'Show Icons\' or a text version \'Show texts\' to let people know more about your food restrictions.</string>
+    <string name="help_not_show">Do not show it again</string>
+
+
+    <string name="select_a_language">Language to show</string>
+    <string name="what_can_you_eat">What can you eat?</string>
+    <string name="message_allergic_to">Hi! I want to tell you that I\'m allergic to those types of food listed bellow. Be sure you are not using it on my food</string>
+    <string name="message_dont_eat">Hi! I want to tell you that I don\'t eat those types of food listed bellow. Be sure you are not using it on my food</string>
+
+    <string name="serious_mode_on_msg">No!! Come on!! Seriously? Why take life so serious? But OK. Let\'s turn this serious mode on :D</string>
+    <string name="serious_mode_off_msg">Awesome :D. Life is too good. Let\'s have some fun :D</string>
+
+    <string name="msg_title_vegetarian">Vegetarian</string>
+    <string name="msg_title_vegan">Vegan</string>
+    <string name="msg_title_joke_cannibal">Cannibal</string>
+    <string name="msg_veget">Hi, I\'m vegetarian. I do not eat fish, seafood, poultry or any meat.</string>
+    <string name="msg_vegan">Hi, I\'m vegan. I do not eat fish, seafood, poultry, meat or any animal products, including eggs, dairy and honey.</string>
+    <string name="msg_joke_cannibal">Hi, I\'m a cannibal. I choose you to be my lunch today, would you like to follow me to the kitchen?</string>
+    <string name="image" translatable="false">image</string>
+
+    <!--nav_menu-->
+    <string name="Recommend">推荐栏</string>
+    <string name="Food_res">食物限制</string>
+    <string name="Fitness">步数统计</string>
+    <string name="Set_res">设置食物限制</string>
+    <string name="Share">共享位置</string>
+    <string name="history">历史记录</string>
+    <string name="commu">交流</string>
+</resources>

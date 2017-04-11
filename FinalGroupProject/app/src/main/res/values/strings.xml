@@ -1,0 +1,178 @@
+<resources>
+    <string name="app_name">Smart Choice</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password </string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_sign_up">Sign up</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_main2">Smart Choice</string>
+    <string name="title_activity_Login">Login</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Log out</string>
+    <string name="action_exit">Exit</string>
+    <string name="action_about">About</string>
+    <string name="buttom_convert">See what to eat!</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="Profile">Profile</string>
+    <string name="content_main">See what to eat!</string>
+    <string name="step">Step court</string>
+
+    <string name="auth_failed">Sign up failed , please try it again</string>
+    <string name="auth_successed">Sign up successed, please return to Login interface</string>
+
+    <!--gps-->
+    <string name="share_location">Share</string>
+    <string name="copy_location">Copy</string>
+    <string name="view_location">View</string>
+    <string name="copied">Copied to clipboard</string>
+    <string name="getting_location">Getting location…</string>
+    <string name="share_location_via">Share location via</string>
+    <string name="view_location_via">View location via</string>
+
+    <string name="turn_on_GPS">Turn on GPS</string>
+    <string name="permission_denied">GPS permission denied</string>
+
+    <string name="accuracy">Accuracy</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+
+    <string name="choose_link">Choose a link type</string>
+
+    <string name="googlemaps" translatable="false">Google Maps</string>
+    <string name="openstreetmap" translatable="false">OpenStreetMap</string>
+    <string name="geouri" translatable="false">GeoURI</string>
+    <string name="button">but</string>
+
+    <!--food-->
+    <string name="allergic">I\'m Allergic</string>
+    <string name="dont_eat">I don\'t eat</string>
+    <string name="allergic_to">I\'m Allergic to</string>
+    <string name="food_msg_not_allergic">I\'m not allergic to any type of food</string>
+    <string name="food_msg_not_picker">I\'m not picker with the food</string>
+
+    <string name="cow">Beef</string>allergic
+    <string name="chicken">Chicken</string>
+    <string name="pork">Pork</string>
+    <string name="fish">Fish</string>
+    <string name="cheese">Cheese</string>
+    <string name="milk">Milk</string>
+    <string name="pepper">Pepper</string>
+
+    <string name="app_settings_turn_serious_mode_on">Turn Serious Mode On :(</string>
+    <string name="app_settings_show_help_dialog">Show help Dialog</string>
+
+    <string name="no_config_msg">To be able to show your Food Restrictions you have to configure it first</string>
+    <string name="help_title">How does it works?</string>
+    <string name="help_message">1) You have to configure this application using the menu option \'My Restrictions\' to tell it which type of food you are allergic and which type of food you don\'t eat.\n\n 2) Next you will be able to choose in between a graphical version \'Show Icons\' or a text version \'Show texts\' to let people know more about your food restrictions.</string>
+    <string name="help_not_show">Do not show it again</string>
+
+
+    <string name="select_a_language">Language to show</string>
+    <string name="what_can_you_eat">What can you eat?</string>
+    <string name="message_allergic_to">Hi! I want to tell you that I\'m allergic to those types of food listed bellow. Be sure you are not using it on my food</string>
+    <string name="message_dont_eat">Hi! I want to tell you that I don\'t eat those types of food listed bellow. Be sure you are not using it on my food</string>
+
+    <string name="serious_mode_on_msg">No!! Come on!! Seriously? Why take life so serious? But OK. Let\'s turn this serious mode on :D</string>
+    <string name="serious_mode_off_msg">Awesome :D. Life is too good. Let\'s have some fun :D</string>
+
+    <string name="msg_title_vegetarian">Vegetarian</string>
+    <string name="msg_title_vegan">Vegan</string>
+    <string name="msg_title_joke_cannibal">Cannibal</string>
+    <string name="msg_veget">Hi, I\'m vegetarian. I do not eat fish, seafood, poultry or any meat.</string>
+    <string name="msg_vegan">Hi, I\'m vegan. I do not eat fish, seafood, poultry, meat or any animal products, including eggs, dairy and honey.</string>
+    <string name="msg_joke_cannibal">Hi, I\'m a cannibal. I choose you to be my lunch today, would you like to follow me to the kitchen?</string>
+    <string name="image" translatable="false">image</string>
+
+    <!--nav_menu-->
+    <string name="Recommend">Recommend</string>
+    <string name="Food_res">Food Restriction</string>
+    <string name="Fitness">Fitness</string>
+    <string name="Set_res">Restriction Setting</string>
+    <string name="Share">Share Location</string>
+    <string name="history">History</string>
+    <string name="commu">Communicate</string>
+    <string name="title_activity_splash">splash</string>
+</resources>
